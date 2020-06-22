@@ -321,7 +321,7 @@ module.exports = {
 			0: true,
 			30: true,
 			40: { level: { 1: { stamina: 37 } } }
-		},
+		},/*
 		3: { // Onslaught
 			'*': {
 				noInterrupt: [3, 4, 8, 9, 10, 11, 12, 13, 15, 21, 23, 24, 25, 26, 27, 28, 29],
@@ -335,7 +335,7 @@ module.exports = {
 				}
 			},
 			30: true
-		},
+		},*/
 		4: { // Challenging Shout
 			'*': { noInterrupt: [4, 9, 12, 23, 24, 26] },
 			0: {
@@ -432,7 +432,7 @@ module.exports = {
 		},
 		19: { // Pledge of Protection
 			0: { fixedSpeed: true }
-		},
+		},/*
 		21: { // Lockdown Blow
 			1: true,
 			2: {
@@ -443,7 +443,7 @@ module.exports = {
 				}
 			},
 			30: true
-		},
+		},*/
 		22: { // Iron Will
 			0: { fixedSpeed: true }
 		},
@@ -851,7 +851,7 @@ module.exports = {
 		8: { // Fiery Rage
 			1: { fixedSpeed: true },
 			30: true
-		},
+		},/*
 		10: { // Cyclone
 			0: {
 				overcharge: 365,
@@ -869,7 +869,7 @@ module.exports = {
 			11: { noRetry: true },
 			12: { noRetry: true },
 			13: true
-		},
+		},*/
 		11: { // Leaping Strike
 			0: true
 		},
@@ -1484,7 +1484,7 @@ module.exports = {
 					301900: { disableSkill: true }
 				}
 			}
-		},
+		},/*
 		34: { // Wind Walk
 			'*': {
 				stamina: 150,
@@ -1514,7 +1514,7 @@ module.exports = {
 			60: { moveDir: 0.25 },
 			70: { moveDir: 0.75 },
 			80: { moveDir: 1 }
-		},
+		},*/
 		35: { // Windsong
 			0: true
 		},
@@ -1968,7 +1968,7 @@ module.exports = {
 			},
 			0: { type: 'lockon' },
 			10: { type: 'lockonCast' }
-		},
+		},/*
 		25: { // Thrall of Protection
 			'*': {
 				fixedSpeed: true,
@@ -1986,7 +1986,7 @@ module.exports = {
 			0: true,
 			10: true,
 			30: true
-		},
+		},*/
 		28: { // Sonorous Dreams
 			'*': {
 				fixedSpeed: true,
@@ -2021,7 +2021,7 @@ module.exports = {
 			},
 			0: { type: 'lockon' },
 			10: { type: 'lockonCast' }
-		},
+		},/*
 		33: { // Thrall of Vengeance
 			'*': {
 				fixedSpeed: true,
@@ -2039,7 +2039,7 @@ module.exports = {
 			0: true,
 			10: true,
 			30: true
-		},
+		},*/
 		35: { // Command: Attack
 			0: { fixedSpeed: true }
 		},
@@ -2065,7 +2065,7 @@ module.exports = {
 		},
 		43: { // Unsummon Thrall
 			0: true
-		},
+		},/*
 		44: { // Mass Teleport
 			0: {
 				noInterrupt: [17],
@@ -2077,7 +2077,7 @@ module.exports = {
 		45: { // Thrall Augmentation
 			0: true,
 			50: true
-		},
+		},*/
 		47: { // Arunic Release
 			0: true
 		},
@@ -3782,7 +3782,7 @@ module.exports = {
 			2: { fixedSpeed: true },
 			10: true,
 			11: true
-		},
+		},/*
 		5: { // Impact Bomb
 			'*': {
 				moveDir: 1,
@@ -3800,7 +3800,7 @@ module.exports = {
 				connectSkillArrow: true,
 				noRetry: true
 			}
-		},
+		},*/
 		6: { // One Thousand Cuts
 			'*': {
 				hasChains: true,
@@ -3948,7 +3948,7 @@ module.exports = {
 		},
 		20: { // Clone Jutsu
 			0: { fixedSpeed: true }
-		},
+		},/*
 		21: { // Boomerang Shuriken
 			'*': {
 				hasChains: true,
@@ -3976,7 +3976,7 @@ module.exports = {
 			},
 			50: true,
 			51: true
-		},
+		},*/
 		22: { // Quick Attack
 			10: {
 				noInterrupt: [22],
