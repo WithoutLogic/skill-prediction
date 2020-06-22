@@ -20,6 +20,7 @@
         "lib/require.js": "d8fcd57f21ba1cea3d474688c994804b21676c6a4cb6a9dbc4ed929c79a37dac",
         "migration.js": "b7479525dd7257af68594063227698a7ab4a752688024368ef5e740b0700a9ed",
         "module.json": "c3ec71ff37dd344ce22c82363b119228dad13d29c9496bbc7224b1aa52b9447c",
-        "package.json": "f661f14ae53eeae6bdc3f0679f27ce4d336907649eca15eba6725703a01fb0a9"
+        "package.json": "f661f14ae53eeae6bdc3f0679f27ce4d336907649eca15eba6725703a01fb0a9",
+        "settings.json": "dc795a5fba6eededf656723a86dda4f0940bce5bc2727997fadbdcee73ad33f6"
     }
 }
