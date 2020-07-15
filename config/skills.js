@@ -83,7 +83,7 @@ module.exports = {
 		},
 		13: { // Retaliate
 			0: false
-		},
+		},/*
 		16: { // Charging Slash
 			0: {
 				fixedSpeed: true,
@@ -92,7 +92,7 @@ module.exports = {
 				noRetry: true
 			},
 			1: { noInterrupt: [2, 10, "16-1", 32, 40, 41] }
-		},
+		},*/
 		17: { // Vortex Slash
 			0: true,
 			1: true,
@@ -485,7 +485,7 @@ module.exports = {
 		},
 		27: { // Rallying Cry
 			0: true
-		},
+		},/*
 		28: { // Super Leap
 			0: {
 				noInterrupt: [1, 3, 4, 5, 8, 9, 10, 12, 13, 18, 21, 23, 24, 26, 28, 29],
@@ -496,7 +496,7 @@ module.exports = {
 				}
 			},
 			1: true
-		},
+		},*/
 		29: { // Guardian's Barrier
 			0: {
 				fixedSpeed: true,
