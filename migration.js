@@ -8,7 +8,7 @@ const DefaultSettings = {
 											SKILL_RETRY_MS * SKILL_RETRY_COUNT should be under 100, otherwise skills may go off twice.
 										*/
 		longRetryCount:			3,		//	Only used for Warrior: Blade Waltz
-		longRetryMs:			30,
+		longRetryMs:			45,
 		retryJittercomp:		15,		//	Skills that support retry will be sent this much earlier than estimated by jitter compensation.
 		delayOnFail:			true,	//	Basic initial desync compensation. Useless at low ping (<50ms).
 		chargeJitterMax:		50,		/*	Maximum jitter delay to add to charging skills.

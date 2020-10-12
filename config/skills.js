@@ -459,7 +459,7 @@ module.exports = {
 		},
 		27: { // Rallying Cry
 			0: true
-		},
+		},/*
 		28: { // Super Leap
 			0: {
 				noInterrupt: [1, 3, 4, 5, 8, 9, 10, 12, 13, 18, 21, 23, 24, 26, 28, 29],
@@ -470,7 +470,7 @@ module.exports = {
 				}
 			},
 			1: true
-		},
+		},*/
 		29: { // Guardian's Barrier
 			0: {
 				ignoreAttackSpeed: true,
@@ -1125,19 +1125,19 @@ module.exports = {
 				type: 'lockonCast',
 				ignoreAttackSpeed: true
 			}
-		},
+		},/*
 		26: { // Teleport Jaunt
 			0: {
 				cooldownEnd: 300,
 				noRetry: true
 			}
-		},
+		},*/
 		27: { // Hailstorm
 			0: true
-		},
+		},/*
 		30: { // Nova
 			0: true
-		},
+		},*/
 		31: { // Warp Barrier
 			10: true,
 			20: true
@@ -1296,7 +1296,7 @@ module.exports = {
 				length: 1000,
 				distance: 413
 			}
-		},/*
+		},
 		34: { // Wind Walk
 			'*': {
 				stamina: 150,
@@ -1322,7 +1322,7 @@ module.exports = {
 			60: { moveDir: 0.25 },
 			70: { moveDir: 0.75 },
 			80: { moveDir: 1 }
-		},*/
+		},
 		35: { // Windsong
 			0: true
 		},
@@ -1474,14 +1474,14 @@ module.exports = {
 			},
 			21: true,
 			30: true
-		},/*
+		},
 		28: { // Mana Charge / Divine Charge
 			0: true,
 			10: { noRetry: true },
 			11: { noRetry: true },
 			12: { noRetry: true },
 			13: { noRetry: true }
-		},*/
+		},
 		29: { // Triple Nemesis
 			"*": { triggerAbnormal: { 806104: 1480 } },
 			0: true,
@@ -1560,7 +1560,7 @@ module.exports = {
 				partyOnly: true
 			},
 			10: { type: 'lockonCast' }
-		}/*,
+		},
 		42: { // Holy Burst
 			20: true,
 			30: true
@@ -1568,7 +1568,7 @@ module.exports = {
 		43: { // Edict of Judgement
 			0: true,
 			50: true
-		}*/
+		}
 	},
 	7: { // Mystic
 		1: { // Sharan Bolt
@@ -1804,11 +1804,11 @@ module.exports = {
 				cooldownEnd: 300,
 				noRetry: true
 			}
-		},*/
+		},
 		45: { // Thrall Augmentation
 			0: true,
 			50: true
-		},
+		},*/
 		47: { // Arunic Release
 			0: true
 		},
@@ -2481,9 +2481,11 @@ module.exports = {
 			30: { noRetry: true }
 		},
 		5: { // Burst Fire / Targeted Burst Fire
-			'*': { noInterrupt: ['9-0', '9-10', '9-20'] },
-			0: {
+			'*': { 
 				noRetry: true,
+				noInterrupt: ['9-0', '9-10', '9-20'] 
+			},
+			0: {
 				noInterrupt: [5]
 			},
 			1: {
@@ -3176,12 +3178,19 @@ module.exports = {
 					92024: 30,
 					92026: 30,
 					92040: 30
+				},
+				level: {
+					10: { ignoreAttackSpeed: true }
 				}
 			},
 			1: true,
 			2: true,
 			3: true,
-			30: true,
+			30: {
+				level: {
+					10: { ignoreAttackSpeed: true }
+				}
+			},
 			31: true,
 			32: true
 		},

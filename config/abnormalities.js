@@ -1,4 +1,5 @@
 module.exports = {
+	
 	/* Warrior */
 	105100: true, // Aerial Scythe
 
