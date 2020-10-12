@@ -21,7 +21,6 @@
         "lib/require.js": "d8fcd57f21ba1cea3d474688c994804b21676c6a4cb6a9dbc4ed929c79a37dac",
         "migration.js": "43e70e0c23729c8c22c0581e89ebd1b9a2a719b42fe6455991d0aa322780c599",
         "module.json": "4d81e9e8b917062316ba0df5542529862854570f6f05d27dd72d799b2bbd6da4",
-        "package.json": "f661f14ae53eeae6bdc3f0679f27ce4d336907649eca15eba6725703a01fb0a9",
-        "settings.json": "872ffbe4fa5c185f6aea4fc5d9a81d663eaa4e5c4ca44b738b8034c54123a820"
+        "package.json": "f661f14ae53eeae6bdc3f0679f27ce4d336907649eca15eba6725703a01fb0a9"
     }
 }
