@@ -1125,19 +1125,19 @@ module.exports = {
 				type: 'lockonCast',
 				ignoreAttackSpeed: true
 			}
-		},/*
+		},
 		26: { // Teleport Jaunt
 			0: {
 				cooldownEnd: 300,
 				noRetry: true
 			}
-		},*/
+		},
 		27: { // Hailstorm
 			0: true
-		},/*
+		},
 		30: { // Nova
 			0: true
-		},*/
+		},
 		31: { // Warp Barrier
 			10: true,
 			20: true
@@ -1501,7 +1501,7 @@ module.exports = {
 		},
 		32: { // Divine Prayer
 			0: { ignoreAttackSpeed: true }
-		},
+		},/*
 		33: { // Ishara's Lulliby
 			'*': {
 				ignoreAttackSpeed: true,
@@ -1509,7 +1509,7 @@ module.exports = {
 			},
 			0: { type: 'lockon' },
 			10: { type: 'lockonCast' }
-		},
+		},*/
 		34: { // Restorative Burst
 			0: true
 		},
@@ -1797,7 +1797,7 @@ module.exports = {
 		},
 		43: { // Unsummon Thrall
 			0: true
-		},/*
+		},
 		44: { // Mass Teleport
 			0: {
 				noInterrupt: [17],
@@ -1808,7 +1808,7 @@ module.exports = {
 		45: { // Thrall Augmentation
 			0: true,
 			50: true
-		},*/
+		},
 		47: { // Arunic Release
 			0: true
 		},
