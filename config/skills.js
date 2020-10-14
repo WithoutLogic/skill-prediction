@@ -588,14 +588,14 @@ module.exports = {
 		},
 		16: { // Fury Strike
 			0: true
-		},
+		},/*
 		17: { // Headlong Rush
 			0: {
 				ignoreAttackSpeed: true,
 				length: 1000,
 				distance: 413
 			}
-		},
+		},*/
 		18: { // Overpower
 			"*": { noInterrupt: [1, 2, 3, 4, 6, 8, 9, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28] },
 			0: true,
@@ -670,7 +670,7 @@ module.exports = {
 				}
 			},
 			30: true
-		},
+		}/*,
 		27: { // Savage Strike
 			'*': {
 				noInterrupt: ['27-31'],
@@ -699,7 +699,7 @@ module.exports = {
 			1: true,
 			2: true,
 			3: true
-		}
+		}*/
 	},
 	3: { // Berserker
 		1: { // Combo Attack
@@ -1474,14 +1474,14 @@ module.exports = {
 			},
 			21: true,
 			30: true
-		},
+		},/*
 		28: { // Mana Charge / Divine Charge
 			0: true,
 			10: { noRetry: true },
 			11: { noRetry: true },
 			12: { noRetry: true },
 			13: { noRetry: true }
-		},
+		},*/
 		29: { // Triple Nemesis
 			"*": { triggerAbnormal: { 806104: 1480 } },
 			0: true,
@@ -1520,7 +1520,7 @@ module.exports = {
 			},
 			0: { type: 'lockon' },
 			10: { type: 'lockonCast' }
-		},
+		},/*
 		37: { // Healing Immersion
 			'*': {
 				ignoreAttackSpeed: true,
@@ -1535,7 +1535,7 @@ module.exports = {
 				type: 'lockonCast',
 				noInterrupt: ['37-10']
 			}
-		},
+		},*/
 		38: { // Backstep
 			0: {
 				moveDir: 1,
@@ -1551,7 +1551,7 @@ module.exports = {
 			0: true,
 			10: true,
 			20: true
-		},
+		},/*
 		41: { // Divine Intervention / Mass Divine Intervention
 			'*': { noRetry: true },
 			0: {
@@ -1560,7 +1560,7 @@ module.exports = {
 				partyOnly: true
 			},
 			10: { type: 'lockonCast' }
-		},
+		},*/
 		42: { // Holy Burst
 			20: true,
 			30: true
@@ -1632,7 +1632,7 @@ module.exports = {
 		},
 		11: { // Summon: Group
 			0: true
-		},
+		},/*
 		12: { // Vow of Rebirth
 			'*': { noRetry: true },
 			0: {
@@ -1641,7 +1641,7 @@ module.exports = {
 				partyOnly: true
 			},
 			10: { type: 'lockonCast' }
-		},
+		},*/
 		13: { // Aura of the Merciless
 			0: true,
 			50: true
