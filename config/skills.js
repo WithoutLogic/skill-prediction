@@ -1061,13 +1061,13 @@ module.exports = {
 		},
 		17: { // Painful Trap
 			0: true
-		},
+		},/*
 		18: { // Glacial Retreat
 			0: {
 				moveDir: 1,
 				forceClip: true
 			}
-		},
+		},*/
 		19: { // Mana Siphon
 			0: true,
 			10: { noRetry: true },
