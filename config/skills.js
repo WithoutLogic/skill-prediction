@@ -71,16 +71,8 @@ module.exports = {
 		},
 		13: { // Retaliate
 			0: false
-		},/*
-		16: { // Charging Slash
-			0: {
-				ignoreAttackSpeed: true,
-				length: 1100,
-				distance: 467.88,
-				noRetry: true
-			},
-			1: { noInterrupt: [2, 10, "16-1", 32, 40, 41] }
-		},*/
+		},
+		16: false, //Charging Slash
 		17: { // Vortex Slash
 			0: true,
 			1: true,
@@ -300,18 +292,8 @@ module.exports = {
 			0: true,
 			30: true,
 			40: { level: { 1: { stamina: 37 } } }
-		},/*
-		3: { // Onslaught
-			'*': { noInterrupt: [3, 4, 8, 9, 10, 11, 12, 13, 15, 21, 23, 24, 25, 26, 27, 28, 29] },
-			0: {
-				chains: {
-					1: 30,
-					5: 30,
-					18: 30
-				}
-			},
-			30: true
-		},*/
+		},
+		3: false, // Onslaught
 		4: { // Challenging Shout
 			'*': { noInterrupt: [4, 9, 12, 23, 24, 26] },
 			0: {
@@ -411,18 +393,8 @@ module.exports = {
 		},
 		19: { // Pledge of Protection
 			0: { ignoreAttackSpeed: true }
-		},/*
-		21: { // Lockdown Blow
-			1: true,
-			2: {
-				chains: {
-					10: 30,
-					13: 30,
-					18: 30
-				}
-			},
-			30: true
-		},*/
+		},
+		21: false, // Lockdown Blow
 		22: { // Iron Will
 			0: { ignoreAttackSpeed: true }
 		},
@@ -459,18 +431,8 @@ module.exports = {
 		},
 		27: { // Rallying Cry
 			0: true
-		},/*
-		28: { // Super Leap
-			0: {
-				noInterrupt: [1, 3, 4, 5, 8, 9, 10, 12, 13, 18, 21, 23, 24, 26, 28, 29],
-				forceClip: true,
-				chains: {
-					15: 1,
-					25: 1
-				}
-			},
-			1: true
-		},*/
+		},
+		28: false, // Super Leap
 		29: { // Guardian's Barrier
 			0: {
 				ignoreAttackSpeed: true,
@@ -919,15 +881,8 @@ module.exports = {
 				noInterrupt: [29],
 				forceClip: true
 			}
-		},/*
-		30: { // Axe Counter
-			'*': {
-				noInterrupt: [1, '3-10', '3-11', '3-12', '3-13', 4, 6, '8-30', '10-10', '10-11', '10-12', '10-13', 11, 12, 13, '15-10', '15-11', '15-12', '15-13', '15-14', 18, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 35, 36, 37],
-				requiredBuff: 401402
-			},
-			0: true,
-			30: true
-		},*/
+		},
+		30: false, // Axe Counter
 		31: { // Overwhelm
 			0: {
 				ignoreAttackSpeed: true,
@@ -1061,13 +1016,8 @@ module.exports = {
 		},
 		17: { // Painful Trap
 			0: true
-		},/*
-		18: { // Glacial Retreat
-			0: {
-				moveDir: 1,
-				forceClip: true
-			}
-		},*/
+		},
+		18: false, // Glacial Retreat
 		19: { // Mana Siphon
 			0: true,
 			10: { noRetry: true },
@@ -1474,42 +1424,22 @@ module.exports = {
 			},
 			21: true,
 			30: true
-		},/*
-		28: { // Mana Charge / Divine Charge
-			0: true,
-			10: { noRetry: true },
-			11: { noRetry: true },
-			12: { noRetry: true },
-			13: { noRetry: true }
-		},*/
+		},
+		28: false, // Mana Charge / Divine Charge
 		29: { // Triple Nemesis
 			"*": { triggerAbnormal: { 806104: 1480 } },
 			0: true,
 			1: true,
 			2: true
-		},/*
-		30: { // Plague of Exhaustion
-			'*': {
-				ignoreAttackSpeed: true,
-				noRetry: true
-			},
-			0: { type: 'lockon' },
-			10: { type: 'lockonCast' }
-		},*/
+		},
+		30: false, // Plague of Exhaustion
 		31: { // Guardian Sanctuary
 			0: { ignoreAttackSpeed: true }
 		},
 		32: { // Divine Prayer
 			0: { ignoreAttackSpeed: true }
-		},/*
-		33: { // Ishara's Lulliby
-			'*': {
-				ignoreAttackSpeed: true,
-				noRetry: true
-			},
-			0: { type: 'lockon' },
-			10: { type: 'lockonCast' }
-		},*/
+		},
+		33: false, // Ishara's Lulliby
 		34: { // Restorative Burst
 			0: true
 		},
@@ -1520,22 +1450,8 @@ module.exports = {
 			},
 			0: { type: 'lockon' },
 			10: { type: 'lockonCast' }
-		},/*
-		37: { // Healing Immersion
-			'*': {
-				ignoreAttackSpeed: true,
-				noRetry: true
-			},
-			0: {
-				type: 'lockon',
-				noInterrupt: [37],
-				partyOnly: true
-			},
-			10: {
-				type: 'lockonCast',
-				noInterrupt: ['37-10']
-			}
-		},*/
+		},
+		37: false, // Healing Immersion
 		38: { // Backstep
 			0: {
 				moveDir: 1,
@@ -1551,16 +1467,8 @@ module.exports = {
 			0: true,
 			10: true,
 			20: true
-		},/*
-		41: { // Divine Intervention / Mass Divine Intervention
-			'*': { noRetry: true },
-			0: {
-				type: 'lockon',
-				ignoreAttackSpeed: true,
-				partyOnly: true
-			},
-			10: { type: 'lockonCast' }
-		},*/
+		},
+		41: false, // Divine Intervention / Mass Divine Intervention
 		42: { // Holy Burst
 			20: true,
 			30: true
@@ -1632,16 +1540,8 @@ module.exports = {
 		},
 		11: { // Summon: Group
 			0: true
-		},/*
-		12: { // Vow of Rebirth
-			'*': { noRetry: true },
-			0: {
-				type: 'lockon',
-				ignoreAttackSpeed: true,
-				partyOnly: true
-			},
-			10: { type: 'lockonCast' }
-		},*/
+		},
+		12: false, // Vow of Rebirth
 		13: { // Aura of the Merciless
 			0: true,
 			50: true
@@ -3482,20 +3382,8 @@ module.exports = {
 			2: { ignoreAttackSpeed: true },
 			10: true,
 			11: true
-		},/*
-		5: { // Impact Bomb
-			'*': {
-				moveDir: 1,
-				noInterrupt: [5],
-				forceClip: true,
-				noRetry: true
-			},
-			0: { categoryChains: { 900: 30 } },
-			30: {
-				connectSkillArrow: true,
-				noRetry: true
-			}
-		},*/
+		},
+		5: false, // Impact Bomb
 		6: { // One Thousand Cuts
 			'*': {
 				hasChains: true
@@ -3625,35 +3513,8 @@ module.exports = {
 		},
 		20: { // Clone Jutsu
 			0: { ignoreAttackSpeed: true }
-		},/*
-		21: { // Boomerang Shuriken
-			'*': {
-				hasChains: true,
-				noRetry: true
-			},
-			0: { categoryChains: { 93003: 15 } },
-			11: { categoryChains: { 93003: 17 } },
-			12: { categoryChains: { 93003: 16 } },
-			13: { categoryChains: { 93003: 18 } },
-			15: {
-				connectSkillArrow: true,
-				noRetry: true
-			},
-			16: {
-				connectSkillArrow: true,
-				noRetry: true
-			},
-			17: {
-				connectSkillArrow: true,
-				noRetry: true
-			},
-			18: {
-				connectSkillArrow: true,
-				noRetry: true
-			},
-			50: true,
-			51: true
-		},*/
+		},
+		21: false, // Boomerang Shuriken
 		22: { // Quick Attack
 			10: {
 				noInterrupt: [22],
