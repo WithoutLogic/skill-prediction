@@ -8,7 +8,7 @@ const DefaultSettings = {
 											SKILL_RETRY_MS * SKILL_RETRY_COUNT should be under 100, otherwise skills may go off twice.
 										*/
 		longRetryCount:			3,		//	Only used for Warrior: Blade Waltz
-		longRetryMs:			45,
+		longRetryMs:			80,
 		retryJittercomp:		15,		//	Skills that support retry will be sent this much earlier than estimated by jitter compensation.
 		delayOnFail:			true,	//	Basic initial desync compensation. Useless at low ping (<50ms).
 		chargeJitterMax:		50,		/*	Maximum jitter delay to add to charging skills.
@@ -25,7 +25,7 @@ const DefaultSettings = {
 	ping: {
 		interval:	4300,	//	Interval between pings. Recommended 2000-3000ms for WiFi or unstable connections, 6000ms for wired.
 		timeout:	30000,	//	Milliseconds to wait before giving up and retrying ping.
-		maxHistory: 10		//	Maximum number of ping samples used to calculate min/max/avg values.
+		maxHistory: 5		//	Maximum number of ping samples used to calculate min/max/avg values.
 	},
 	debug: {
 		skills:			false,
