@@ -368,14 +368,7 @@ module.exports = {
 			},
 			30: true
 		},
-		15: { // Charging Lunge
-			0: {
-				ignoreAttackSpeed: true,
-				length: 1125,
-				distance: 474.5,
-			},
-			1: { noInterrupt: [2, '15-1', 25, 28] }
-		},
+		15: false, // Charging Lunge
 		16: { // Second Wind
 			0: { ignoreAttackSpeed: true }
 		},
@@ -432,7 +425,17 @@ module.exports = {
 		27: { // Rallying Cry
 			0: true
 		},
-		28: false, // Super Leap
+		28: { // Super Leap
+			0: {
+				noInterrupt: [1, 3, 4, 5, 8, 9, 10, 12, 13, 18, 21, 23, 24, 26, 28, 29],
+				forceClip: true,
+				chains: {
+					15: 1,
+					25: 1
+				}
+			},
+			1: true
+		},
 		29: { // Guardian's Barrier
 			0: {
 				ignoreAttackSpeed: true,
