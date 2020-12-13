@@ -72,7 +72,15 @@ module.exports = {
 		13: { // Retaliate
 			0: false
 		},
-		16: false, //Charging Slash
+		16: { // Charging Slash
+			0: {
+				ignoreAttackSpeed: true,
+				length: 1100,
+				distance: 467.88,
+				noRetry: true
+			},
+			1: { noInterrupt: [2, 10, "16-1", 32, 40, 41] }
+		},
 		17: { // Vortex Slash
 			0: true,
 			1: true,

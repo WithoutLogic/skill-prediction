@@ -10,7 +10,7 @@
         "client_data/polishing.json": "0c96e135535b1ee6bcc04407d81cf50552ce2eca23ebeeea31ffe5531776098e",
         "client_data/skills.json": "e09a392aa96dcd06efb415314d8528da2c18c39f75721471725231d85ea2f235",
         "config/abnormalities.js": "037460fe381086236482aeb6ab7b812155a3370c67aebae97e5665ac399fac8e",
-        "config/skills.js": "db7b82b10e910e313c3e8b03af9f33035d1d43feba29ce541a2759ea4f7d83af",
+        "config/skills.js": "bff51522d4c270c4fc93f8231a47195efd99b1db50ec9097e3144891fea65d6c",
         "lib/abnormalities.js": "cd4195728c6f57b0d55a4b85368512d7bdf99c8693d0c891d7233a82218df645",
         "lib/commands.js": "36944d196764a6a88a954a4e58edeed6aa0e2ba6a032abd3860ce76fe0a7da67",
         "lib/cooldowns.js": "d0d055bd6a8a45d4dfe10e1c7e7802e39a2c8eab01d111d087768d587a7c5f2d",
