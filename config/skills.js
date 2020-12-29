@@ -3176,6 +3176,7 @@ module.exports = {
 		},
 		6: { // Haymaker
 			'*': {
+				forceClip: true,
 				hasChains: true,
 				checkBaseCd: true
 			},
@@ -3198,6 +3199,7 @@ module.exports = {
 		},
 		7: { // Roundhouse Kick
 			'*': {
+				forceClip: true,
 				noInterrupt: [7],
 				hasChains: true
 			},
