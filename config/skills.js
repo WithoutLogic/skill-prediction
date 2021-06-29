@@ -301,7 +301,17 @@ module.exports = {
 			30: true,
 			40: { level: { 1: { stamina: 37 } } }
 		},
-		3: false, // Onslaught
+		3: { // Onslaught
+			'*': { noInterrupt: [3, 4, 8, 9, 10, 11, 12, 13, 15, 21, 23, 24, 25, 26, 27, 28, 29] },
+			0: {
+				chains: {
+					1: 30,
+					5: 30,
+					18: 30
+				}
+			},
+			30: true
+		},
 		4: { // Challenging Shout
 			'*': { noInterrupt: [4, 9, 12, 23, 24, 26] },
 			0: {
@@ -330,10 +340,7 @@ module.exports = {
 			0: true
 		},
 		8: { // Shield Counter
-			0: { 
-				onlyDefenceSuccess: true,
-				noRetry: true
-			}
+			0: { onlyDefenceSuccess: true }
 		},
 		9: { // Leash
 			0: true
@@ -376,7 +383,14 @@ module.exports = {
 			},
 			30: true
 		},
-		15: false, // Charging Lunge
+		15: { // Charging Lunge
+			0: {
+				ignoreAttackSpeed: true,
+				length: 1125,
+				distance: 474.5,
+			},
+			1: { noInterrupt: [2, '15-1', 25, 28] }
+		},
 		16: { // Second Wind
 			0: { ignoreAttackSpeed: true }
 		},
@@ -395,7 +409,17 @@ module.exports = {
 		19: { // Pledge of Protection
 			0: { ignoreAttackSpeed: true }
 		},
-		21: false, // Lockdown Blow
+		21: { // Lockdown Blow
+			1: true,
+			2: {
+				chains: {
+					10: 30,
+					13: 30,
+					18: 30
+				}
+			},
+			30: true
+		},
 		22: { // Iron Will
 			0: { ignoreAttackSpeed: true }
 		},
@@ -561,14 +585,14 @@ module.exports = {
 		},
 		16: { // Fury Strike
 			0: true
-		},/*
+		},
 		17: { // Headlong Rush
 			0: {
 				ignoreAttackSpeed: true,
 				length: 1000,
 				distance: 413
 			}
-		},*/
+		},
 		18: { // Overpower
 			"*": { noInterrupt: [1, 2, 3, 4, 6, 8, 9, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28] },
 			0: true,
@@ -643,7 +667,7 @@ module.exports = {
 				}
 			},
 			30: true
-		}/*,
+		},
 		27: { // Savage Strike
 			'*': {
 				noInterrupt: ['27-31'],
@@ -672,7 +696,7 @@ module.exports = {
 			1: true,
 			2: true,
 			3: true
-		}*/
+		}
 	},
 	3: { // Berserker
 		1: { // Combo Attack
@@ -893,7 +917,14 @@ module.exports = {
 				forceClip: true
 			}
 		},
-		30: false, // Axe Counter
+		30: { // Axe Counter
+			'*': {
+				noInterrupt: [1, '3-10', '3-11', '3-12', '3-13', 4, 6, '8-30', '10-10', '10-11', '10-12', '10-13', 11, 12, 13, '15-10', '15-11', '15-12', '15-13', '15-14', 18, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 35, 36, 37],
+				requiredBuff: 401402
+			},
+			0: true,
+			30: true
+		},
 		31: { // Overwhelm
 			0: {
 				ignoreAttackSpeed: true,
@@ -1028,7 +1059,12 @@ module.exports = {
 		17: { // Painful Trap
 			0: true
 		},
-		18: false, // Glacial Retreat
+		18: { // Glacial Retreat
+			0: {
+				moveDir: 1,
+				forceClip: true
+			}
+		},
 		19: { // Mana Siphon
 			0: true,
 			10: { noRetry: true },
@@ -1436,21 +1472,41 @@ module.exports = {
 			21: true,
 			30: true
 		},
-		28: false, // Mana Charge / Divine Charge
+		28: { // Mana Charge / Divine Charge
+			0: true,
+			10: { noRetry: true },
+			11: { noRetry: true },
+			12: { noRetry: true },
+			13: { noRetry: true }
+		},
 		29: { // Triple Nemesis
 			"*": { triggerAbnormal: { 806104: 1480 } },
 			0: true,
 			1: true,
 			2: true
 		},
-		30: false, // Plague of Exhaustion
+		30: { // Plague of Exhaustion
+			'*': {
+				ignoreAttackSpeed: true,
+				noRetry: true
+			},
+			0: { type: 'lockon' },
+			10: { type: 'lockonCast' }
+		},
 		31: { // Guardian Sanctuary
 			0: { ignoreAttackSpeed: true }
 		},
 		32: { // Divine Prayer
 			0: { ignoreAttackSpeed: true }
 		},
-		33: false, // Ishara's Lulliby
+		33: { // Ishara's Lulliby
+			'*': {
+				ignoreAttackSpeed: true,
+				noRetry: true
+			},
+			0: { type: 'lockon' },
+			10: { type: 'lockonCast' }
+		},
 		34: { // Restorative Burst
 			0: true
 		},
@@ -1462,7 +1518,21 @@ module.exports = {
 			0: { type: 'lockon' },
 			10: { type: 'lockonCast' }
 		},
-		37: false, // Healing Immersion
+		37: { // Healing Immersion
+			'*': {
+				ignoreAttackSpeed: true,
+				noRetry: true
+			},
+			0: {
+				type: 'lockon',
+				noInterrupt: [37],
+				partyOnly: true
+			},
+			10: {
+				type: 'lockonCast',
+				noInterrupt: ['37-10']
+			}
+		},
 		38: { // Backstep
 			0: {
 				moveDir: 1,
@@ -1479,7 +1549,15 @@ module.exports = {
 			10: true,
 			20: true
 		},
-		41: false, // Divine Intervention / Mass Divine Intervention
+		41: { // Divine Intervention / Mass Divine Intervention
+			'*': { noRetry: true },
+			0: {
+				type: 'lockon',
+				ignoreAttackSpeed: true,
+				partyOnly: true
+			},
+			10: { type: 'lockonCast' }
+		},
 		42: { // Holy Burst
 			20: true,
 			30: true
@@ -1552,7 +1630,15 @@ module.exports = {
 		11: { // Summon: Group
 			0: true
 		},
-		12: false, // Vow of Rebirth
+		12: { // Vow of Rebirth
+			'*': { noRetry: true },
+			0: {
+				type: 'lockon',
+				ignoreAttackSpeed: true,
+				partyOnly: true
+			},
+			10: { type: 'lockonCast' }
+		},
 		13: { // Aura of the Merciless
 			0: true,
 			50: true
@@ -3176,7 +3262,6 @@ module.exports = {
 		},
 		6: { // Haymaker
 			'*': {
-				forceClip: true,
 				hasChains: true,
 				checkBaseCd: true
 			},
@@ -3199,7 +3284,6 @@ module.exports = {
 		},
 		7: { // Roundhouse Kick
 			'*': {
-				forceClip: true,
 				noInterrupt: [7],
 				hasChains: true
 			},
@@ -3396,7 +3480,19 @@ module.exports = {
 			10: true,
 			11: true
 		},
-		5: false, // Impact Bomb
+		5: { // Impact Bomb
+			'*': {
+				moveDir: 1,
+				noInterrupt: [5],
+				forceClip: true,
+				noRetry: true
+			},
+			0: { categoryChains: { 900: 30 } },
+			30: {
+				connectSkillArrow: true,
+				noRetry: true
+			}
+		},
 		6: { // One Thousand Cuts
 			'*': {
 				hasChains: true
@@ -3527,7 +3623,34 @@ module.exports = {
 		20: { // Clone Jutsu
 			0: { ignoreAttackSpeed: true }
 		},
-		21: false, // Boomerang Shuriken
+		21: { // Boomerang Shuriken
+			'*': {
+				hasChains: true,
+				noRetry: true
+			},
+			0: { categoryChains: { 93003: 15 } },
+			11: { categoryChains: { 93003: 17 } },
+			12: { categoryChains: { 93003: 16 } },
+			13: { categoryChains: { 93003: 18 } },
+			15: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
+			16: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
+			17: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
+			18: {
+				connectSkillArrow: true,
+				noRetry: true
+			},
+			50: true,
+			51: true
+		},
 		22: { // Quick Attack
 			10: {
 				noInterrupt: [22],
